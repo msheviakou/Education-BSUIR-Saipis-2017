@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" type="image/x-icon"  href="../resources/images/ball.jpg">
+		<link rel="stylesheet"    type="text/css"      href="../css/style.css">
+		<link rel="stylesheet"	  type="text/css"      href="../css/header.css">
+		<link rel="stylesheet"	  type="text/css"      href="../css/footer.css">
+		<link rel="stylesheet"	  type="text/css" 	   href="../css/bootstrap.min.css">
+		<link rel="stylesheet" 	  type="text/css"	   href="../css/font-awesome.css">
+
+		<script type="text/javascript" 		src="../js/script.js"></script>
+		<script type="text/javascript" 		src="../js/jquery.js"></script>
+		<script type="text/javascript" 		src="../js/mustache/mustache.js" ></script>
+		<script data-main="../js/config.js" src="../js/require.js"></script>
+
+		<title>Команда</title>
+	</head>
+		
+	<body>
+		<header>
+			<nav>
+				<div class="head-size" >		
+					<div class="col-md-1">
+						<div id="logo"><a href="index"><img src="../resources/images/logoRM.jpg" alt=""></a></div>			
+					</div>
+					<div class="col-md-4">
+						<div id="logo"><a href="index">Official Website</a></div>
+						<div id="logo"><a href="index">Real Madrid CF</a></div>
+					</div>
+					<div class="col-md-7 text-right menu-1">
+						<ul>
+							<li><a href="index">Главная</a></li>	
+							<li><a style="color: #fff" href="team">Команда</a></li>				        
+							<li><a href="trophies">Трофеи</a></li>
+							<li><a href="uniform">Форма</a></li>
+							<li id="menu1"></li>
+						</ul>
+						<ul>
+							<li id="menu2"></li>
+							<li id="menu3"></li>
+						</ul>
+						<script>
+							var val = <%- JSON.stringify(menu1) %>;
+						 	menu1.innerHTML = val;
+						  	val = <%- JSON.stringify(menu2) %>;
+						 	menu2.innerHTML = val;
+						 	val = <%- JSON.stringify(menu3) %>;
+						 	menu3.innerHTML = val;
+						</script>		
+					</div>
+				</div>
+			</nav>		    
+		</header>
+
+		<div class="my-flex-container">
+			<div class="my-flex-block">
+				<div class="tooltip">
+				<figure>
+		        	<img src="../resources/team/player1.jpg" alt="Игрок №1" class="img-rounded" title="№1 - Вратарь">
+		        	<figcaption>Кейлор Навас</figcaption>
+	        	</figure>
+	        	</div>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player2.jpg" alt="Игрок №2" class="img-rounded" title="№2 - Защитник">
+		        	<figcaption>Даниэль Карвахаль</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player3.jpg" alt="Игрок №3" class="img-rounded" title="№6 - Полузащитник">
+		        	<figcaption>Лука Модрич</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player4.jpg" alt="Игрок №4" class="img-rounded" title="№9 - Нападающий">
+		        	<figcaption>Карим Бензема</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player5.jpg" alt="Игрок №5" class="img-rounded" title="№8 - Полузащитник">
+		        	<figcaption>Тони Кроос</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player6.jpg" alt="Игрок №6"class="img-rounded" title="№7 - Нападающий">
+		        	<figcaption>Криштиану Роналду</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player7.jpg" alt="Игрок №7"class="img-rounded" title="№8 - Нападающий">
+		        	<figcaption>Гарет Бэйл</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player8.jpg" alt="Игрок №8"class="img-rounded" title="№5 - Защитник">
+		        	<figcaption>Матео Ковачич</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player9.jpg" alt="Игрок №9"class="img-rounded" title="№3 - Защитник">
+		        	<figcaption>Каземиро</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player10.jpg" alt="Игрок №10"class="img-rounded" title="№13 - Нападающий">
+		        	<figcaption>Иско</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player11.jpg" alt="Игрок №11"class="img-rounded" title="№9 - Полузащитник">
+		        	<figcaption>Марсело</figcaption>
+	        	</figure>
+			</div>
+			<div class="my-flex-block">
+				<figure>
+		        	<img src="../resources/team/player12.jpg" alt="Игрок №12"class="img-rounded" title="№6 - Полузащитник">
+		        	<figcaption>Начо</figcaption>
+	        	</figure>
+			</div>
+		</div>
+		
+		<input id="mainCoachID" class="btn btn-primary" type="button" value="Главный тренер" onclick="getCoach();">
+		
+		<div class="mainCoach"></div>
+		<div id="infoCoach"></div>	
+
+    	<footer>		
+			<div class="container">
+			<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> 			
+			<div class="socialContainer">
+					<h4>Социальные сети</h4>
+					<ul class="social">
+						<li><a href="https://www.facebook.com/RealMadrid/"  target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+						<li><a href="https://twitter.com/realmadrid" 	    target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://vk.com/realmadrid_news" 	    target="_blank"><i class="fa fa-vk"></i></a></li>
+						<li><a href="https://www.instagram.com/realmadrid/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<small>Copyright &copy; 2017 Made by <a href="https://vk.com/shevam">Sheviakou Maksim</a></small>		
+			</div>
+		</footer>
+
+	</body>
+</html>

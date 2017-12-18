@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon"  href="../resources/images/ball.jpg">
+		<link rel="stylesheet"    type="text/css" 	   href="../css/authentiticationStyle.css">
+		<link rel="stylesheet"    type="text/css" 	   href="../css/menu.css">
+		<link rel="stylesheet"    type="text/css"      href="../css/footer.css">
+		<link rel="stylesheet"    type="text/css"      href="../css/bootstrap.min.css">
+		
+		<script type="text/javascript" src="../js/jquery.js"></script>
+
+		<title>Авторизация</title>
+	</head>
+
+	<body>
+		<div class="authHeader">
+			<div class="logoImg"></div>
+			<div class="logoAbout"></div>
+
+			<nav>
+				<ul class="menu">
+				    <li><a href="index">Главная</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="bodyAuth">
+			<form action="/authentication" method="post">
+				Логин:<br>
+				<input type="login" class="form-control" placeholder="Введите логин..." id="amount" name="login">
+				<br>
+				Пароль:<br>
+				<input type="password" class="form-control" placeholder="Введите пароль..." id="amount" name="password">
+				<input type="submit" class="btn btn-primary btn-block" name="actionButton" value="Войти">
+				<input type="submit" class="btn btn-primary btn-block" name="actionButton" value="Зарегистрироваться">
+			</form> 
+		</div>
+		
+		<div class="authFooter">
+			Copyright &copy; 2017 Made by <a href="https://vk.com/shevam">Sheviakou Maksim</a>
+		</div>
+	</body>
+</html>

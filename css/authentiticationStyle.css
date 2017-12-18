@@ -1,0 +1,49 @@
+.authHeader
+{
+  position: relative; /* Положение устанавливается относительно исходного места */
+  width: 100%;
+  height: 200px;
+  background-color: #1A1B17;
+  text-align: center;
+}
+.authFooter
+{
+  font-size: 17px;
+  background-color: #000000;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.logoImg
+{
+  position: relative;
+  height: 70%;
+  width: 100%;
+  left: 1%;
+  float: left;
+  background-image: url(../resources/images/logoRM.jpg);
+  z-index: 999;
+  background-repeat: no-repeat;
+}
+
+.logoAbout
+{
+  position: relative;
+  height: 80%;
+  width: 100%;
+  background-image: url(../resources/images/headerAuth.jpg);
+}
+
+.bodyAuth
+{
+  background: #F3FFFB;
+  padding: 3% 33%;
+  font-size: 20px;
+  height: 340px;
+}
+
+.btn
+{
+  margin-top: 6%;
+}

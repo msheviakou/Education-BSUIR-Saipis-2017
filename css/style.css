@@ -1,0 +1,278 @@
+/* Start Slider */
+.slider {
+  width: 60%;  
+  max-height: 500px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 110px;
+  margin-bottom: 7px;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  margin-bottom: 0px;
+  width: 400%;
+  animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+  min-height:  300px;
+  list-style: none;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes cambio{
+  0% {margin-left: 0%; }
+  20% {margin-left: 0%; }
+
+  25% {margin-left: -100%; }
+  45% {margin-left: -100%; }
+
+  50% {margin-left: -200%; }
+  70% {margin-left: -200%; }
+
+  75% {margin-left: -300%; }
+  100% {margin-left: -300%; }
+}
+/* End Slider */
+
+/* Start Section */
+section {
+  padding: 60px 0;
+  color: #fff;
+  margin-bottom: 7px;
+  background-color: #29396D;
+  background-size: cover;
+  text-align: center; 
+}
+
+section p {
+    color: #c7a298;
+    font-size: 14px;
+    margin: 30px auto;
+    font-style: italic; 
+}
+
+section h3 {
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px; 
+}
+
+section h3 span {
+      text-transform: initial;
+      font-family: "Great Vibes", cursive;
+      font-size: 80px;
+      color: #dc8068; 
+}
+
+section a {
+    background-color: #dc8068;
+    color: #fff; 
+}
+/* End Section */ 
+
+/*Start Team Container */
+.my-flex-container {
+    width: 740px;
+    display: flex; 
+    flex-wrap: wrap; /* Multiple lines */
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px auto;
+    margin-bottom: 20px;
+}
+
+.my-flex-container > .my-flex-block img:hover
+{
+    position: relative;
+    transform: scale(1.1);
+    z-index: 9999;
+}
+/* End Team Container */
+
+figure {
+  padding-top: 20px;
+  text-align: center;
+}
+
+figure:hover {
+  font-size: 20px;
+}
+
+figcaption {
+  margin-top: 5px;
+}
+
+/* Start Trophies Section */
+#trophiesSection {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background: #55ddff;
+  background: radial-gradient(#001E8A, #BBBF4D);
+  box-shadow: inset 7px 1px 5px 7px #ccc;
+}
+
+#trophiesSection>h1 {
+  color: #5304C9;
+  font-size: 40px;
+}
+
+#trophiesSection>h2 {
+  color: #FFDD00;
+  font-size: 30px;
+}
+
+#trophiesSection>h2:first-letter {color: #FFDB4D;}
+#trophiesSection>h2:hover {color: #FFFEAA; cursor: pointer;}
+
+.trophy {
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid #5023C9;
+}
+
+img.trophy {
+  animation: 11s linear 0s normal none infinite running trophy;
+}
+
+@keyframes trophy {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+video {
+  border-radius: 10%;
+  opacity: 0.5;
+  margin-right: 56px;
+}
+
+video:hover {
+  opacity: 1;
+}
+/* End Trophies Section */ 
+
+/* Start Uniform Page Styles */
+thead {
+ font-size: 20px;
+}
+
+.tableWrapper {
+  padding-top: 750px;
+  background-image: url(../resources/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1350px;
+}
+
+.tableForm {
+  position: absolute;
+  top: 160px;
+  left: 450px;
+}
+
+#soccerUniform {
+  color: white;
+  font-size: 15px;
+}
+
+#soccerUniform th {
+  padding: 3px;
+}
+
+#jsonButton {
+  position: absolute;
+  top:;
+  margin: auto;
+}
+/* End Uniform Page Styles */
+
+/* Start Employees Page Styles */
+.employeesClass{
+  background: url(../resources/images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1350px;
+  height: 745px;
+  padding-top: 1px;
+}
+
+#employeesForm {
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  background-color: rgba(0,0,0,.5);
+  padding-top: 2%;
+  border-radius: 2%;
+  font-size: 15px;
+}
+
+#infoEmployees{
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 5%;
+  font-size: 25px;
+  color: #D0FF00;
+  font-weight: bold;
+}
+/* End Employees Page Styles */
+
+nav ul > li > a:hover{
+  text-decoration: underline;
+}
+
+.authClass {
+  color: #C2D536;
+}
+
+.authClass:link {
+  color: #497DDD; 
+}
+
+.authClass:hover {
+  color: #69E8FF;
+}
+
+.authClass:active {
+  color: #497DDD; 
+}
+
+#mainCoachID{
+  margin-left: 604px;
+  margin-bottom: 15px;
+}
+
+.mainCoach {  
+  margin-bottom: 30px;
+  text-align: center;
+  animation-name: Benzema;
+  animation-duration: 10s;
+}
+
+@keyframes Benzema {
+    0%   { transform: translateX(0px) rotate(0deg) ; opacity:1;}
+    40%  { transform: translateX(450px) rotate(360deg) ; opacity:0.5; border-radius: 5%;}
+    80%  { transform: translateX(-450px) rotate(0deg) ; opacity:0.7;}
+    100% { transform: translateX(0px) rotate(0deg) ; opacity:1; border-radius: 50%;}
+}
+
+#infoCoach{
+  margin-bottom: 35px;
+  text-align: center;
+  color: blue;
+  font-style: italic;
+}

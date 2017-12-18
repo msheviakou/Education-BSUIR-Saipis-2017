@@ -1,0 +1,59 @@
+nav {
+  position: fixed; /* Привязывается к указанной свойствами left, top, right и bottom точке. Не меняет положения при прокрутке */
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px ;
+  z-index: 1001;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #141D3C;
+}
+
+nav #logo {
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 0;
+  font-family: "Old Standard TT", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: ;
+}
+
+nav #logo img {
+  max-width: 100%;
+}
+
+nav a {
+  padding: 5px 10px;
+  color: #fff;
+}
+
+nav ul {
+  padding: 0;
+  margin: 2px 0 0 0;
+}
+
+nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Отмена маркера для списка */
+  display: inline; /* Элемент отображается как встроенный. Содержимое начинается с того места, где окончился предыдущий элемент */
+  font-family: "Old Standard TT", sans-serif;
+  font-style: italic;
+}
+
+nav ul li a {
+  font-size: 20px;
+  padding: 0px 10px;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
+  color: white;
+}

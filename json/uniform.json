@@ -1,0 +1,77 @@
+﻿{  
+  "part":
+  [
+    {
+    "type" : "Шорты",
+    "model" : "Puma",
+    "characteristics" :
+      [
+         { "colors" : "Чёрно-белые", "quality" : "Синтетика" }
+      ]
+    },
+
+    {
+    "type" : "Шорты",
+    "model" : "Adidas",
+    "characteristics" :
+      [
+        { "colors" : "Тёмно-синие", "quality" : "Лён" }
+      ]
+    },
+
+    {
+    "type" : "Майка",
+    "model" : "Reebok",
+    "characteristics" :
+      [
+        { "colors" : "Чёрно-красная", "quality" : "Синтетика" }
+      ]
+    },
+
+    {
+    "type" : "Майка",
+    "model" : "Adidas",
+    "characteristics" :
+      [
+        { "colors" : "Тёмно-синяя", "quality" : "Лён" }
+      ]
+    },
+
+    {
+    "type" : "Бутсы",
+    "model" : "Nike",
+    "characteristics" :
+      [
+        { "thorns" : "Шипы: 8", "sizeUniform" : "Размер: 41" }
+      ]
+    },
+
+    {
+    "type" : "Бутсы",
+    "model" : "New Balance",
+    "characteristics" :
+      [
+        { "thorns" : "Шипы: 9", "sizeUniform" : "Размер: 43" }
+      ]
+    },
+
+    {
+    "type" : "Гетры",
+    "model" : "Adidas",
+    "characteristics" :
+      [
+        { "color" : "Голубые", "sizeUniform" : "XL" }
+      ]
+    },
+
+    {
+    "type" : "Гетры",
+    "model" : "Nike",
+    "characteristics" :
+      [
+        { "color" : "Синие", "sizeUniform" : "XXL" }
+      ]
+    }
+
+  ]
+}

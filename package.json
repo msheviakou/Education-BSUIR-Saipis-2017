@@ -1,0 +1,23 @@
+{
+  "name": "kr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shevyakov Maksim",
+  "license": "ISC",
+  "dependencies": {
+    "alert-node": "^0.2.1",
+    "body-parser": "^1.18.2",
+    "end": "^0.2.3",
+    "env": "0.0.2",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.5.1",
+    "mongodb": "^2.2.33"
+  }
+}

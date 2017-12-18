@@ -1,0 +1,73 @@
+footer {
+  background-color: #141D3C;
+  text-align: center; 
+}
+ 
+footer small {
+  color: #988e89;
+  display: block; /* Элемент показывается как блочный. Происходит перенос строк в начале и в конце содержимого */
+  margin-bottom: 35px; 
+}
+
+.back-to-top {
+  color: #fff;
+  background-color: #664d42;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 2px solid #fff; 
+ 
+}
+
+.back-to-top:hover {
+  background-color: #fff;
+  border: 3px solid  #000000;
+}
+
+.socialContainer {
+  margin-bottom: 30px;
+}
+
+.socialContainer h4{
+  color: #fff;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+}
+
+.social li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block; /* Генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу */ 
+  zoom: 1;
+  display: inline;
+}
+
+.social li a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  color: #FBB448;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.social li a i {
+  font-size: 30px;
+}
+
+.social li a:hover {
+  color: #ec0505;
+}

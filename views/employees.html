@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon"  href="../resources/images/ball.jpg">
+	<link rel="stylesheet"    type="text/css"      href="../css/style.css">
+	<link rel="stylesheet"	  type="text/css"      href="../css/header.css">
+	<link rel="stylesheet"	  type="text/css"      href="../css/footer.css">
+	<link rel="stylesheet"	  type="text/css" 	   href="../css/bootstrap.min.css">
+	<link rel="stylesheet" 	  type="text/css"	   href="../css/font-awesome.css">
+
+	<script type="text/javascript" 		src="../js/script.js"></script>
+	<script type="text/javascript" 		src="../js/jquery.js"></script>
+	<script type="text/javascript" 		src="../js/mustache/mustache.js"></script>
+	<script data-main="../js/config.js" src="../js/require.js"></script>
+
+	<title>Сотрудники</title>
+</head>
+
+<body onload="displayEmployees();">	
+	<header>
+		<nav>
+			<div class="head-size" >		
+				<div class="col-md-1">
+					<div id="logo"><a href="index"><img src="../resources/images/logoRM.jpg" alt=""></a></div>			
+				</div>
+				<div class="col-md-4">
+					<div id="logo"><a href="index">Official Website</a></div>
+					<div id="logo"><a href="index">Real Madrid CF</a></div>
+				</div>
+				<div class="col-md-7 text-right menu-1">
+					<ul>
+						<li><a href="index">Главная</a></li>	
+						<li><a href="team">Команда</a></li>				        
+						<li><a href="trophies">Трофеи</a></li>
+						<li><a style="color: #fff" href="uniform">Форма</a></li>
+						<li id="menu1"></li>
+					</ul>
+					<ul>
+						<li id="menu2"></li>
+						<li id="menu3"></li>
+					</ul>
+					<script>
+						var val = <%- JSON.stringify(menu1) %>;
+					 	menu1.innerHTML = val;
+					  	val = <%- JSON.stringify(menu2) %>;
+					 	menu2.innerHTML = val;
+					 	val = <%- JSON.stringify(menu3) %>;
+					 	menu3.innerHTML = val;
+					</script>		
+				</div>
+			</div>
+		</nav>		    
+	</header>
+	
+	<div class="employeesClass">
+		<form id="employeesForm">
+			<select id="surnames"></select><br><br>
+
+			<select id="experience" size="1">
+				<option disabled>Выберите стаж</option>
+				<option>Нет стажа</option>
+				<option>Менее 5 лет</option>
+				<option>5-10 лет</option>
+				<option>Более 10 лет</option>			
+			</select><br><br>
+
+			<input type="checkbox" id="breach" value="breach"><strong style="color: white"> Наличие нарушений</strong><br><br>
+
+			<select id="rate" size="1">
+				<option disabled>Выберите тарифную ставку</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>			
+			</select><br><br>
+
+			<strong style="color: white">Количество детей в семье<br></strong>
+			<input type="text" id="childs" name="childs"><br><br>
+
+			<input type="button" value="Сохранить данные" id="saveData" onclick="showSalary(
+				$('select#surnames').val(),
+				$('select#rate').val(),
+				$('select#experience').val(),
+				$('#breach').prop('checked'),
+				$('#childs').val());">
+			</input><br><br>
+
+			<input type="button" value="Вывести среднюю з/п сотрудников" onclick="showAverage();"></input><br><br>
+
+			<input type="button" value="Вывести информацию о сотруднике	" onclick="showInfo($('select#surnames').val());"></input><br><br>
+		</form>
+			
+		<ol id="infoEmployees"></ol>
+	</div>
+
+	<footer>		
+		<div class="container">
+		<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> 			
+		<div class="socialContainer">
+				<h4>Социальные сети</h4>
+				<ul class="social">
+					<li><a href="https://www.facebook.com/RealMadrid/"  target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+					<li><a href="https://twitter.com/realmadrid" 	    target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://vk.com/realmadrid_news" 	    target="_blank"><i class="fa fa-vk"></i></a></li>
+					<li><a href="https://www.instagram.com/realmadrid/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<small>Copyright &copy; 2017 Made by <a href="https://vk.com/shevam">Sheviakou Maksim</a></small>		
+		</div>
+	</footer>
+
+</body>
+</html>
+
+<!-- chrome://settings/siteData -->

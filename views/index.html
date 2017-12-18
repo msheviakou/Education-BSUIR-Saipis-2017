@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" type="image/x-icon"  href="../resources/images/ball.jpg">
+		<link rel="stylesheet"    type="text/css"      href="../css/style.css">
+		<link rel="stylesheet"	  type="text/css"      href="../css/header.css">
+		<link rel="stylesheet"	  type="text/css"      href="../css/footer.css">
+		<link rel="stylesheet"	  type="text/css" 	   href="../css/bootstrap.min.css">
+		<link rel="stylesheet" 	  type="text/css"	   href="../css/font-awesome.css">
+	
+		<script type="text/javascript" 		src="../js/script.js"></script>
+		<script type="text/javascript" 		src="../js/jquery.js"></script>
+		<script type="text/javascript" 		src="../js/mustache/mustache.js" ></script>
+		<script data-main="../js/config.js" src="../js/require.js"></script>
+
+		<title>Главная</title>
+	</head>
+		
+	<body onload="getInfoAboutRM()">
+		<header>
+			<nav>
+				<div class="head-size" >		
+					<div class="col-md-1">
+						<div id="logo"><a href="index"><img src="../resources/images/logoRM.jpg" alt=""></a></div>			
+					</div>
+					<div class="col-md-4">
+						<div id="logo"><a href="index">Official Website</a></div>
+						<div id="logo"><a href="index">Real Madrid CF</a></div>
+					</div>
+					<div class="col-md-7 text-right menu-1">
+						<ul>
+							<li><a style="color: #fff" href="index">Главная</a></li>	
+							<li><a href="team">Команда</a></li>				        
+							<li><a href="trophies">Трофеи</a></li>
+							<li><a href="uniform">Форма</a></li>
+							<li id="menu1"></li>
+						</ul>
+						<ul>
+							<li id="menu2"></li>
+							<li id="menu3"></li>
+						</ul>
+						<script>
+  							var val = <%- JSON.stringify(menu1) %>; // Converting object to string
+						 	menu1.innerHTML = val;
+						    var val = <%- JSON.stringify(menu2) %>;
+						    menu2.innerHTML=val;
+						    var val = <%- JSON.stringify(menu3) %>;
+						    menu3.innerHTML=val;
+						</script>			
+					</div>
+				</div>
+			</nav>		    
+		</header>
+		
+		<div class="container">
+			<div class="slider">
+				<ul>
+					<li><img src="../resources/images/slider/slide1.jpg" alt="Слайдер фото №1"></li>
+					<li><img src="../resources/images/slider/slide2.jpg" alt="Слайдер фото №2"></li>
+					<li><img src="../resources/images/slider/slide3.jpg" alt="Слайдер фото №3"></li>
+					<li><img src="../resources/images/slider/slide4.jpg" alt="Слайдер фото №4"></li>
+				</ul>					
+			</div>
+		</div>
+
+		<section>
+			<div class="container">
+				<h2>Футбольный клуб Real Madrid</h2>
+				<p>"Реал Мадрид" — испанский профессиональный футбольный клуб, названный ФИФА лучшим футбольным клубом XX века. По данным организации "Deloitte", "Реал" является клубом с самым большим бюджетом в мире с годовым оборотом 904 миллиона евро и самым ценным клубом стоимостью 9,5 миллиарда евро. "Реал Мадрид" — один из трёх клубов, которые ни разу не покидали высший испанский дивизион, двумя другими являются «Барселона» и "Атлетик Бильбао.</p>
+				<p id="fileText"><p>
+				<h1 id="nameRM"></h1>
+				<h2 id="descriptionRM"></h2>	
+				<button type="button" class="btn btn-info" id="fileButton">Узнать больше</button>
+				<button type="button" class="btn btn-info" id="htmlButton" value="loadMore">Главный девиз</button>	
+			</div>
+		</section>
+		
+    	<footer>		
+			<div class="container">
+			<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> 			
+			<div class="socialContainer">
+					<h4>Социальные сети</h4>
+					<ul class="social">
+						<li><a href="https://www.facebook.com/RealMadrid/"  target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+						<li><a href="https://twitter.com/realmadrid" 	    target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://vk.com/realmadrid_news" 	    target="_blank"><i class="fa fa-vk"></i></a></li>
+						<li><a href="https://www.instagram.com/realmadrid/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<small>Copyright &copy; 2017 Made by <a href="https://vk.com/shevam">Sheviakou Maksim</a></small>		
+			</div>
+		</footer>
+
+	</body>
+</html>
